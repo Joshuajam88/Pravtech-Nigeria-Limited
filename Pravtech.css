@@ -326,7 +326,7 @@ a.logo-txt{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -433,7 +433,7 @@ a.logo-txt{
         width: 50%;
         height: 50px;
         position: relative;
-        left: 70px;
+        left: 90px;
         font-size: 10px;
     }
     .btn-view{
