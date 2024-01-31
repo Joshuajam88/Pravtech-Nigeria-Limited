@@ -327,6 +327,9 @@ a.logo-txt{
 
 
 @media only screen and (max-width: 600px) {
+    *{
+        overflow: -moz-hidden-unscrollable;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
