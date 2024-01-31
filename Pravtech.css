@@ -75,6 +75,9 @@ a.nav-link:hover{
     color: #aa384b;
     text-decoration: none;
 }
+#logo-img{
+    width: 80px;
+}
 a.logo-txt{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 10px;
@@ -82,8 +85,8 @@ a.logo-txt{
 
 .bg-img{
     background-image:
-    linear-gradient( rgba(156, 159, 161, 0.418), rgba(0, 0, 0, 0.575)),
-    url('img/Background-image.avif');
+    linear-gradient( rgba(133, 134, 134, 0.596), rgba(0, 0, 0, 0.842)),
+    url('https://media.istockphoto.com/id/1465317602/photo/civil-engineer-teams-meeting-working-together-wear-worker-helmets-hardhat-on-construction.jpg?s=612x612&w=0&k=20&c=paDFN56pT6iZqPaibncxXXKGdbZEPLnzfC8PHMU9MxQ=');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -170,6 +173,13 @@ a.logo-txt{
     color: #faf5e7d3;
     border-radius: 5px;
 }
+.btn-view{
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+}
 #btn-view:hover{
     background-color: #a18489;
     transition-duration: 1s;
@@ -208,10 +218,10 @@ a.logo-txt{
 .bg-contact{
     background-image:
     linear-gradient(to top, rgba(156, 159, 161, 0.171), rgba(0, 0, 0, 0.767)),
-    url('img/Contact.webp');
+    url('https://media.istockphoto.com/id/995603950/photo/concept-of-engineers-and-windmills.jpg?s=612x612&w=0&k=20&c=hc3b3wEs6FNA-P3pLxQuJw-kiu7Y7JAeBodAMCapfDU=');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: unset;
+    background-position: center;
     margin-top: 50px;
 }
 .bg-contact-txt{
@@ -259,7 +269,7 @@ a.logo-txt{
     border: 1px solid white;
     border-radius: 100%;
     border-width: 3px;
-    border-color: #aa384b;
+    border-color: #a18489;
     filter: invert(10%) sepia(91%) saturate(2664%) hue-rotate(350deg) brightness(91%) contrast(98%);
 }
 .profile-title{
@@ -282,8 +292,8 @@ a.logo-txt{
     text-transform: uppercase;
     font-family:'Rubik', sans-serif;
     font-weight: 600;
-    color: #e8e8e9;
-    background-color: #aa384b;
+    color: #e8e8e9c2;
+    background-color: #494c55e8;
     font-size: 15px;
 }
 .profile-btn:hover{
@@ -292,7 +302,7 @@ a.logo-txt{
     transition: 1s;
     transform: translateY(-2px);
 }
-#service{
+#services{
     text-align: center;
     margin-top: 200px;
     margin-bottom: 50px;
@@ -300,6 +310,11 @@ a.logo-txt{
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     color: #0f0f0fd2;
+
+}
+#service{
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .service-txt{
     font-size: 18px;
@@ -322,8 +337,8 @@ a.logo-txt{
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+
     }
     
     .nav-menu.active {
@@ -350,10 +365,153 @@ a.logo-txt{
         transform: translateY(-8px) rotate(-45deg);
     }
     
-    .nav-logo{
-        margin: 0 100px 0 -80px;
+    #logo-img{
+        width: 40px;
     }
-    /* .bg-img-txt{
+    span.logo-txt{
+        padding: 0;
+        margin: 0;
         display: none;
-    } */
+        font-size: 10px;
+    }
+    .bg-img{
+        width: 100%;
+    }
+    .bg-img-txt{
+        margin: 0;
+        padding: 50px 50px 50px 50px;
+        font-size: 15px;
+    }
+    .serv1{
+        display: grid;
+        grid-template-columns: min-content;
+        grid-template-columns: auto auto auto;
+        justify-self: unset;
+        margin: 70% 0 0 0;
+    }
+    .serv1-body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .btn-read{
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .serv1-img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .serv-title{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+    .serv2{
+        position: absolute;
+        padding: 0 0 20px 0;
+        margin: 0;
+        background-color: #101010;
+
+    }
+    .serv2-title{
+        font-size: 20px;
+        max-width: none;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .serv2-txt{
+        font-size: 10px;
+        max-width: none;
+        text-align: center;
+        padding: 0 20px;
+    }
+    #btn-view{
+        width: 50%;
+        height: 50px;
+        position: relative;
+        left: 70px;
+        font-size: 10px;
+    }
+    .btn-view{
+        font-size: 13px;
+        text-align: center;
+    }
+    .navbar{
+        margin: 0 10px;
+    }
+    .data{
+        display: grid;
+        grid-template-columns: min-content;
+        justify-content: center;
+        width: 100%;
+        margin: 50px 0 0 0;
+        padding: 30px 0;
+        text-align: center;
+        background-color: #e8e8e9;
+    }
+    .data-img{
+        width: 50%;
+        height: 50%;
+    }
+    .data-h1{
+        font-size: 25px;
+    }
+    .data-txt{
+        font-size: 10px;
+    }
+    .bg-contact{
+        padding: 50px 0;
+    }
+    .bg-contact-txt{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    .bg-contact-btn{
+        width: 50%;
+        background-color: #974b58e8;
+    }
+    .profiles{
+        display: grid;
+        grid-template-columns: max-content;
+        justify-content: center;
+        margin: 50px 0 0 0;
+        padding: 50px 0; 
+        background-color: #e8e8e9;
+    }
+    .profile-img{
+        width: 40%;
+        height: 40%;
+    }
+    .profile-btn{
+        background-color: #974b58e8;
+        height: 10%;
+        width: 50%;
+        color: #fff;
+    }
+    .our-service{
+        width: 100%;
+    }
+    #services{
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+    #service{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #service-title{
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 39px;
+        background-color: #e8e8e9;
+    }
+    .service-list li{
+        list-style-type: decimal;
+    }
   }
